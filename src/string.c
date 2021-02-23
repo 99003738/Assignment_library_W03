@@ -14,7 +14,7 @@ int mystrlen(char *string)
          }
          ch = *string++;
      }
-return count;
+return (count+1);
 }
 
 
