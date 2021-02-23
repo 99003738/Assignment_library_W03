@@ -11,7 +11,7 @@
 int mystrlen(char string[size]);
 //char *chptr=NULL;
 
-char newstring[size];
+char new_string[size];
 
 int mystrcpy(char *source, char *destination);
 int mystrcat(char *string_1, char *string_2, char *newstring);
