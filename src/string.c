@@ -42,10 +42,6 @@ int mystrcat*(char *string_1, char *string_2)
            count++;
            ch1 = *string_1++;
        }
-        newstring[size] = 
-
-      
-
-
+        newstring[size] = string_1[count]+sting_2[0];
 
 }
