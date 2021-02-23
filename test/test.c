@@ -15,7 +15,7 @@ int main()
     while(ch != '\0')
     {
         printf("%c",ch);
-        newstring++;
+       ch =  *newstring++;
     }
     
     return 0;
