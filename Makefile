@@ -6,7 +6,7 @@ BUILD = build
 OBJ = test/test.c\
 src/string.c
 
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
 
 CFLAGS= -Iinclude
 
@@ -14,10 +14,6 @@ CFLAGS= -Iinclude
 
 built: $(OBJ) $(BUILD)
 	gcc -Iinclude $(OBJ) -o $(PROJECT_OUTPUT).out
-
-run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
-
 
 clean:
 	rm *.o *.out
