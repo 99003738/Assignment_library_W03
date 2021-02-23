@@ -50,7 +50,7 @@ int mystrcat(char *string_1, char *string_2, char *newstring)
            count2++;
            ch2 = *string_2++;
        }
-         newstring = &new_string;
+         *newstring = &(new_string);
     return 0;
 
 }
