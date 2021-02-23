@@ -13,7 +13,7 @@ CFLAGS= -Iinclude
 .PHONY: run clean test doc all
 
 built: $(OBJ) $(BUILD)
-	gcc -Iinclude $(OBJ) -o $(PROJECT_OUTPUT).out
+	gcc -Iinclude $(OBJ) -o $(PROJECT_OUTPUT).exe
 
 clean:
 	rm -rf $(BUILD)
