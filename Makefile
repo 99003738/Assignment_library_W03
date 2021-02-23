@@ -3,22 +3,28 @@ PROJECT_NAME= String
 
 BUILD = build
 
-OBJ = test.o string.o 
+OBJ = test/test.c\
+src/string.c
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 CFLAGS= -Iinclude
 
-build: $(OBJ) $(BUID)
+.PHONY: run clean test doc all
+
+built: $(OBJ) $(BUILD)
 	gcc -Iinclude $(OBJ) -o $(PROJECT_OUTPUT).out
 
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT).out
 
-run: 
 
 clean:
 	rm *.o *.out
 
-$(build): 
+
+
+$(BUILD): 
 	mkdir build
 
 #sum.o: sum.c fun.h

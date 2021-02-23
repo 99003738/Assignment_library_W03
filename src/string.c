@@ -1,6 +1,6 @@
 #include "mystring.h"
 
-int mystrlen(char *string[size])
+int mystrlen(char *string)
 {
     //printf("Enter your string :")
     //chptr = (char *)malloc(size*sizeof(char));
@@ -12,7 +12,7 @@ int mystrlen(char *string[size])
          {
              count = count+1; 
          }
-         ch = [string++];
+         ch = *string++;
      }
 return count;
 }
