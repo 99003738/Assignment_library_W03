@@ -34,13 +34,13 @@ int mystrcpy(char *source, char *destination)
 int mystrcat*(char *string_1, char *string_2)
 {
        int count =0;
-       char ch = string_1[0];
+       char ch1 = string_1[0], ch2 = string_2[0];
     
 
        while(ch != '\0')
        {
            count++;
-           ch = *string_1++;
+           ch1 = *string_1++;
        }
         newstring[size] = 
 
