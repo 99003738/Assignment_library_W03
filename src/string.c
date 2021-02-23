@@ -30,3 +30,8 @@ int mystrcpy(char *source, char *destination)
         }
     return 0;
 }
+
+int mystrcat(char *string_1, char *string_2)
+{
+    
+}
