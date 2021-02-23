@@ -41,16 +41,17 @@ int mystrcat(char* string_1, char* string_2, int* newstring)
        {
            new_string[count1] = ch1;
            count1++;
-           ch1 = *string_1++;
+           ch1 = string_1[count1];
        }
         count2 = count1;
         while(ch2 != '\0')
        {
            new_string[count2] = ch2;
            count2++;
-           ch2 = *string_2++;
+           ch2 = string_2[count2-count1];
        }
-         newstring = (int *)&(new_string);
+       printf("\n %s",new_string);
+         //newstring = (int *)&(new_string);
     return 0;
 
 }
