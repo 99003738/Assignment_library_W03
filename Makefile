@@ -16,7 +16,7 @@ built: $(OBJ) $(BUILD)
 	gcc -Iinclude $(OBJ) -o $(PROJECT_OUTPUT).out
 
 clean:
-	rm *.o *.out
+	rm -rf $(BUILD)
 
 
 

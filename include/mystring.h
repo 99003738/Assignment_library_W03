@@ -2,7 +2,7 @@
 #define __MYUTILS_H_
 
 #include <stdio.h>
-
+#include <string.h>
 
 #define size 200
 
@@ -11,7 +11,7 @@
 int mystrlen(char string[size]);
 //char *chptr=NULL;
 
-int mystrcpy(cahr *source, char *destination);
+int mystrcpy(char *source, char *destination);
 int mystrcat();
 int mystrcmp();
 

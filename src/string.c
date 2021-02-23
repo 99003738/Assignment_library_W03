@@ -17,7 +17,7 @@ int mystrlen(char *string)
 return (count+1);
 }
 
-int mystrcpy(cahr *source, char *destination)
+int mystrcpy(char *source, char *destination)
 {
         char src = source[0], des = destination[0];
         int i = 0;
@@ -25,9 +25,8 @@ int mystrcpy(cahr *source, char *destination)
         {
             destination[i] = source[i];
             i++;
+            src = source[i];
 
         }
-
-
     return 0;
 }

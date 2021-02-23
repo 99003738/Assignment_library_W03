@@ -6,12 +6,15 @@
 
 int main()
 {
-    int count = 0;
     
-    count = mystrlen("what is your pet name");
+    char str[50]= "what is your name",dest[100]={};
+    
+   
     mystrcpy(str,dest);
 
-     printf(" %d",count);
+printf(" %s",dest);
+
+    
 
     return 0;
 }
