@@ -19,11 +19,14 @@ return (count+1);
 
 int mystrcpy(cahr *source, char *destination)
 {
+        char src = source[0], des = destination[0];
+        int i = 0;
+        while(src != '\0')
+        {
+            destination[i] = source[i];
+            i++;
 
-
-
-
-
+        }
 
 
     return 0;
