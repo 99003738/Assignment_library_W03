@@ -31,18 +31,26 @@ int mystrcpy(char *source, char *destination)
     return 0;
 }
 
-int mystrcat(char *string_1, char *string_2)
+int mystrcat(char *string_1, char *string_2, char *newstring)
 {
-       int count =0;
+       int count1 =0,count2=0;
        char ch1 = string_1[0], ch2 = string_2[0];
     
 
        while(ch1 != '\0')
        {
-           count++;
+           new_string[count1] = ch1;
+           count1++;
            ch1 = *string_1++;
        }
-        newstring[size] = string_1[count]+string_2[0];
+        count2 = count1;
+        while(ch2 != '\0')
+       {
+           new_string[count2] = ch2;
+           count2++;
+           ch2 = *string_2++;
+       }
+         newstring = &new_string;
     return 0;
 
 }
