@@ -11,7 +11,7 @@
 int mystrlen(char string[size]);
 //char *chptr=NULL;
 
-int mystrcpy();
+int mystrcpy(cahr *source, char *destination);
 int mystrcat();
 int mystrcmp();
 

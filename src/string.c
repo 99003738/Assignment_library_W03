@@ -17,4 +17,14 @@ int mystrlen(char *string)
 return (count+1);
 }
 
+int mystrcpy(cahr *source, char *destination)
+{
 
+
+
+
+
+
+
+    return 0;
+}
