@@ -5,7 +5,7 @@ BUILD = build
 
 OBJ = test.o string.o 
 
-PROJECT_OUTPUT = $(BUILD)/&(PROJECT_NAME).out
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 CFLAGS= -Iinclude
 
