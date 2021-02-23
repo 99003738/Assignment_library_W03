@@ -6,8 +6,9 @@
 
 int main()
 {
-    int count;
-    count = mystrlen("what is your name");
+    int count = 0;
+    
+    count = mystrlen("what is your pet name");
      printf(" %d",count);
 
     return 0;
