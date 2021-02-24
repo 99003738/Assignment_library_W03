@@ -57,15 +57,13 @@ int isPalindrome( int actual_number)
 
     while (original_number != 0) {
         remainder = (original_number % 10);
-        reversedN = reversedN * 10 + remainder;
-        n /= 10;
+        reverse_number = (reverse_number * 10 + remainder);
+        original_number /= 10;
     }
 
-    // palindrome if orignalN and reversedN are equal
-    if (originalN == reversedN)
-        printf("%d is a palindrome.", originalN);
+    if (original_number == reverse_number)
+        return 1;
     else
-        printf("%d is not a palindrome.", originalN);
-
-    return 0;
+        return 0;
+   
 }
