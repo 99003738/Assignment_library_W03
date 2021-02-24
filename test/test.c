@@ -1,5 +1,6 @@
 #include "mystring.h"
-
+#include "myutils.h"
+#include "bitmask.h"
 
 
 
@@ -15,10 +16,10 @@ int main()
       printf("%c",*ch);
             *ch++;
         }*/
-    
-int i;
-   i = isPalindrome(1001);
-   printf(" %d",i);
+    int num ;
+    num = setbit(10,2);
+
+   printf(" set the bit %d", num);
 
 
     return 0;
