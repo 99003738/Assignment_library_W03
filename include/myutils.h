@@ -11,7 +11,7 @@ error_t find_factorial(int num, long* result);
 
 
 int isPrime(int num);
-int isPalindrome();
+int isPalindrome( int actual_number);
 int vSum();
 
 #endif
