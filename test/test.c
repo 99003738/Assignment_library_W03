@@ -18,8 +18,11 @@ int main()
         }*/
     int num ;
     num = setbit(10,2);
-
    printf(" set the bit %d", num);
+    num = reset(10,2);
+    printf(" set the bit %d", num);
+    num = flip(10,2);
+    printf(" set the bit %d", num);
 
 
     return 0;
