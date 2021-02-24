@@ -15,7 +15,7 @@ CFLAGS= -Iinclude
 .PHONY: run clean test doc all
 
 built: $(OBJ) $(BUILD)
-	gcc -Iinclude $(OBJ) -o $(PROJECT_NAME).exe
+	gcc -Iinclude $(OBJ) -o $(PROJECT_NAME).out
 
 clean:
 	rm -rf $(BUILD)
