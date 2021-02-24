@@ -61,7 +61,7 @@ int isPalindrome( int actual_number)
         original_number /= 10;
     }
 
-    if (original_number == reverse_number)
+    if (actual_number == reverse_number)
         return 1;
     else
         return 0;
