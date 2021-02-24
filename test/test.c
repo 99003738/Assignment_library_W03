@@ -17,8 +17,8 @@ int main()
         }*/
     
 int i;
-   i= isPrime(5);
-   rprintf(" %d",i);
+   i = isPrime(6);
+   printf(" %d",i);
 
 
     return 0;
