@@ -26,3 +26,9 @@ error_t find_factorial(int num, long* result)
     }
     
 }
+
+int isPrime(int number)
+{
+    
+}
+
