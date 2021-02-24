@@ -5,7 +5,8 @@ BUILD = build
 
 OBJ = test/test.c\
 src/string.c\
-src/mathfun.c
+src/mathfun.c\
+src/bitMask.c
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
 
