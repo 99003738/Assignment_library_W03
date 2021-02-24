@@ -16,7 +16,9 @@ int main()
             *ch++;
         }*/
     
-int i =0;
+int i;
+   i= isPrime(5);
+   rprintf(" %d",i);
 
 
     return 0;
