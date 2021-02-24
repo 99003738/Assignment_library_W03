@@ -10,3 +10,10 @@ int reset(int number, int position)
 {
     return (number &= ~(1 << position));
 }
+
+
+int flip(int number, int position)
+{
+    return (number ^ (1 << position));
+}
+
