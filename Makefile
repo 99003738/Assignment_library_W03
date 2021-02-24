@@ -1,5 +1,5 @@
 
-PROJECT_NAME= String
+PROJECT_NAME= Math
 
 BUILD = build
 
