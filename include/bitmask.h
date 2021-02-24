@@ -3,8 +3,8 @@
 
 
 int setbit(int number, int position);
-int reset();
-int flip();
+int reset(int number, int position);
+int flip(int num, int position);
 int querry();
 
 
