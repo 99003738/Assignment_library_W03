@@ -4,7 +4,8 @@ PROJECT_NAME= String
 BUILD = build
 
 OBJ = test/test.c\
-src/string.c
+src/string.c\
+src/mathfun.c
 
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
 
