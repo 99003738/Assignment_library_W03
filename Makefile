@@ -7,6 +7,8 @@ src/bitMask.c
 
 BUILD = build
 
+library = $(library)
+
 OBJ = test/test.c\
 src/string.c\
 src/mathfun.c\
@@ -16,13 +18,14 @@ PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
 
 CFLAGS= -Iinclude
 
+
+
 .PHONY: run clean test doc all
 
 built: $(OBJ) $(BUILD)
 	gcc -Iinclude $(OBJ) -o $(PROJECT_NAME).out
 
-obj: $(object)
-	gcc -Iinclude $(object) -c 
+libraryStatic:
 
 clean:
 	rm -rf $(BUILD)
