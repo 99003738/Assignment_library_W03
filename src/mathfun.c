@@ -49,3 +49,23 @@ int isPrime(int number)
     }
 }
 
+int isPalindrome( int actual_number)
+{
+     int n, reverse_number= 0, remainder, original_number;
+        
+        original_number = actual_number;
+
+    while (original_number != 0) {
+        remainder = (original_number % 10);
+        reversedN = reversedN * 10 + remainder;
+        n /= 10;
+    }
+
+    // palindrome if orignalN and reversedN are equal
+    if (originalN == reversedN)
+        printf("%d is a palindrome.", originalN);
+    else
+        printf("%d is not a palindrome.", originalN);
+
+    return 0;
+}
