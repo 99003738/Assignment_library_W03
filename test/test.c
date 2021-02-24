@@ -17,7 +17,7 @@ int main()
         }*/
     
 int i;
-   i = isPrime(6);
+   i = isPalindrome(1001);
    printf(" %d",i);
 
 
