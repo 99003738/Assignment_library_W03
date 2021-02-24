@@ -29,6 +29,23 @@ error_t find_factorial(int num, long* result)
 
 int isPrime(int number)
 {
-    
+    int i = 0,flag=0;
+    for (i = 2; i <= number / 2; ++i) {
+        if (number % i == 0) {
+            flag = 1;
+            return 0;
+            break;
+        }
+    }
+    if (number == 1) 
+    {
+        return 0;
+    }
+    else {
+        if (flag == 0)
+           return 1;
+        else
+           return 0;
+    }
 }
 
