@@ -10,9 +10,7 @@ typedef enum error_t{
 error_t find_factorial(int num, long* result);
 
 
-
-int factorial(int* );
-int isPrime();
+int isPrime(int num);
 int isPalindrome();
 int vSum();
 
