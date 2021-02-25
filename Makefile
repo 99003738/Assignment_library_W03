@@ -7,7 +7,7 @@ src/bitMask.c
 
 BUILD = build
 
-library = $(library)
+
 
 OBJ = test/test.c\
 src/string.c\
@@ -25,7 +25,31 @@ CFLAGS= -Iinclude
 built: $(OBJ) $(BUILD)
 	gcc -Iinclude $(OBJ) -o $(PROJECT_NAME).out
 
-libraryStatic:
+libStat:
+	make mystring
+	make mathfun
+	make bitmask
+	ar rc Usrstring.a string.o
+	ar rc Usrmath.a mathfun.o
+	ar rc Usrbitmask.a bitMask.o
+	mkdir static_Lib
+	cp string.o mathfun.o bitMask.o obj
+	rm string.o mathfun.o bitMask.o
+	cp Usrbitmask.a Usrmath.a Usrstring.a static_Lib
+	rm Usrstring.a Usrmath.a Usrbitmask.a
+
+libdynamic:
+	make mystring
+	gcc -shared -o str.so string.o
+
+bitmask: src/bitMask.c 
+	gcc -Iinclude src/bitMask.c -c 
+mystring: src/string.c
+	gcc -Iinclude src/string.c -c
+mathfun : src/mathfun.c
+	gcc -Iinclude src/mathfun.c -c
+
+
 
 clean:
 	rm -rf $(BUILD)
@@ -34,8 +58,8 @@ clean:
 
 $(BUILD): 
 	mkdir build
-$(library):
-	mkdir library
+
+
 
 #sum.o: sum.c fun.h
 #	gcc -c sum.c
