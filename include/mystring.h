@@ -1,8 +1,8 @@
 #ifndef __MYSTRING_H__
 #define __MYUTILS_H_
 
-#include <stdio.h>
-#include <string.h>
+
+
 
 #define size 200
 
