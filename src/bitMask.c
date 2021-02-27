@@ -8,7 +8,7 @@ int setbit(int number, int position)
 
 int reset(int number, int position)
 {
-    return (number &= ~(1 << position));
+    return (number &= ~(1 << position));   // this will reset the value of selected the position.
 }
 
 
